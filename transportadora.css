@@ -1,0 +1,141 @@
+body{
+margin: 0;
+padding: 0;
+font-size: 14px;
+color: bisque; 
+background-color: black;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+div#topo{
+ width: 100%;
+ height: auto;
+}
+
+header{
+width: 980px;
+height: 50px;
+padding: 40px;
+margin-left: auto;
+margin-right: auto;
+display: grid;
+grid-template-columns: 350px 630px;
+
+}
+
+header div {
+
+
+}
+header #header-contato{
+text-align: right;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+margin: 0 0 0 0;
+font-size: 1.5em;
+font-weight: normal;
+}
+
+#grupo h1 {
+font-size: 2em; /* aqui vai aumentar 2x o valor da fonte principal declarada no body*/
+}
+#grupo h2 {
+font-size: 1em;
+}
+
+header #header-contato li{
+display: inline-block; /*deixar um do lado do outro*/
+border-left: 1px solid #c0bab6;
+padding: 0 0 0 15px;
+margin: 0 0 0 15px;
+}
+/* header: cabeçalho*/
+header #header-contato li :first-child{ /*aqui vai se aplicado apenas no 1º Li, do html*/
+    margin: 0;
+    padding: 0;
+    border: none;
+
+}
+
+#topo, #topo a{
+    color: #c0bab6;
+    background-color: black;
+    text-decoration: none; /* tira o risquinho q vem embaixo do Link*/
+
+}
+/* allinhar o icone ao texto, icone email e telefone*/
+
+span.material-icons{
+    vertical-align: middle;
+}
+
+a{
+color: yellow;
+text-decoration: none;
+}
+
+nav{
+    width: 980px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0; 
+}
+nav ul {
+margin: 0;
+list-style: none;
+text-transform: uppercase;
+font-size:12px ;
+
+}
+
+nav li {
+    float: left; /*flutuar a esqueda, ate preencher a tela*/
+    display: inline-block;
+    margin: 0 30px 0 0;
+
+}
+
+nav li a{
+display: block;
+padding: 20px 0; /* entende os 4 lados, 20 px de margem em cima e 20px margem embaixo, pq tem dois digitos, o 20 e o 0*/
+font-weight: bold;
+
+
+}
+
+nav.home li.link_home a, nav a:hover{
+color: white;
+
+}
+
+
+main{
+
+width: 980px;
+height: 350px;
+margin-top: 10px;
+margin-left: auto;
+margin-right: auto;
+
+display: flex;
+flex-direction: row; /*colum*/
+justify-content: center; /*space-betwenn || space-around*/
+align-items: center; /*baseline || flex-end*/
+flex-wrap: wrap;
+row-gap: 10px;
+column-gap: 40px;
+}
+
+.sectionMain{
+width: 190px;
+height: 300px;
+border: 1px solid #ccc;
+border-radius: 20px;
+padding: 10px;
+
+
+}
